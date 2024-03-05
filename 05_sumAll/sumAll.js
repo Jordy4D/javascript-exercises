@@ -19,9 +19,9 @@ const sumAll = function(startInt, endInt) {
         arrayEnd = endInt;
     }
 
-
-
-    if ( arrayStart < 0 || typeof startInt !== 'string' || typeof endInt !== 'string') {
+    if ( arrayStart < 0 || 
+        typeof arrayStart !== 'number' || 
+        typeof arrayEnd !== 'number') {
         return 'ERROR';
     } else {
         for (let i = arrayStart; i <= arrayEnd; i++) {
